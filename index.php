@@ -11,7 +11,7 @@ $sql = "SELECT * FROM marvelmovies ";
 // execute the SQL query
 //$result = $db->query($sql);
 $db="localdb";
-$result=mysqli_query($db,$sql);
+$result=mysqli_ ($link,$sql);
 while($row = $result->fetch_array())
 {
     /* the code inside here is repeated for each item in the array
