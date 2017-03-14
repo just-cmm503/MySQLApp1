@@ -7,7 +7,7 @@
  */
 // create a SQL query as a string
 include "dbConnect.php";
-$sql = "SELECT * FROM marvelmovies ";
+$sql = "select * FROM 'marvelmovies' ";
 // execute the SQL query
 //$result = $db->query($sql);
 //$db="localdb";
