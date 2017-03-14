@@ -13,7 +13,7 @@ $sql = "select * FROM 'marvelmovies' ";
 //$db="localdb";
 //$result=mysqli_query($link,$sql);
 $result=$link->query($sql);
-mysqli_num_rows($result);
+echo mysqli_num_rows($result)." ... ... ok ... ... ";
 while($row = $result->fetch_array())
 {
     /* the code inside here is repeated for each item in the array
