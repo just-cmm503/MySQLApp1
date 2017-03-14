@@ -8,10 +8,9 @@
 // create a SQL query as a string
 $sql_query = "SELECT * FROM marvelmovies ";
 // execute the SQL query
-//$result = $db->query($sql_query);
-$db="localdb";
+$result = $db->query($sql_query);
 
-$result=mysqli_query($db,$sql);
+//$result=mysqli_query($db,$sql);
 while($row = $result->fetch_array())
 {
     /* the code inside here is repeated for each item in the array
