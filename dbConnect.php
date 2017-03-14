@@ -5,8 +5,7 @@
  * Date: 08/03/2017
  * Time: 11:35
  */
-//function dbConnect($host, $dbName, $uname, $pw)
-//{
+
     $connectstr_dbhost = '';//$host;
     $connectstr_dbname = '';//$dbName;
     $connectstr_dbusername = '';//$uname;
@@ -31,6 +30,4 @@
         echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
         exit;
     }
-  //  return $link;
-//}
 ?>
