@@ -6,6 +6,7 @@
  * Time: 16:49
  */
 // create a SQL query as a string
+include "dbConnect.php";
 $sql_query = "SELECT * FROM marvelmovies ";
 // execute the SQL query
 $result = $db->query($sql_query);
