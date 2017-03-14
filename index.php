@@ -7,11 +7,11 @@
  */
 // create a SQL query as a string
 include "dbConnect.php";
-$sql_query = "SELECT * FROM marvelmovies ";
+$sql = "SELECT * FROM marvelmovies ";
 // execute the SQL query
-$result = $db->query($sql_query);
+//$result = $db->query($sql);
 
-//$result=mysqli_query($db,$sql);
+$result=mysqli_query($db,$sql);
 while($row = $result->fetch_array())
 {
     /* the code inside here is repeated for each item in the array
