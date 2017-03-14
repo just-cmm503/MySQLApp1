@@ -10,7 +10,7 @@ include "dbConnect.php";
 $sql = "SELECT * FROM marvelmovies ";
 // execute the SQL query
 //$result = $db->query($sql);
-
+$db="localdb";
 $result=mysqli_query($db,$sql);
 while($row = $result->fetch_array())
 {
