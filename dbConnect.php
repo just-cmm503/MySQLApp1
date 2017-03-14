@@ -7,10 +7,10 @@
  */
 //function dbConnect($host, $dbName, $uname, $pw)
 //{
-    $connectstr_dbhost = $host;
-    $connectstr_dbname = $dbName;
-    $connectstr_dbusername = $uname;
-    $connectstr_dbpassword = $pw;
+    $connectstr_dbhost = '';//$host;
+    $connectstr_dbname = '';//$dbName;
+    $connectstr_dbusername = '';//$uname;
+    $connectstr_dbpassword = '';//$pw;
     foreach ($_SERVER as $key => $value) {
         if (strpos($key, "MYSQLCONNSTR_localdb") !== 0) {
             continue;
