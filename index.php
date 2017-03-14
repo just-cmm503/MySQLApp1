@@ -7,7 +7,7 @@
  */
 // create a SQL query as a string
 include "dbConnect.php";
-$sql = "SELECT * FROM marvelmovies ";
+$sql = "SELECT * FROM marvelmovies; ";
 // execute the SQL query
 //$result = $db->query($sql);
 //$db="localdb";
@@ -22,5 +22,6 @@ while($row = $result->fetch_array())
     echo "<p>" . $movieTitle . "</p>";
 
 }
-
+$result->close();
+$link->close();
 ?>
