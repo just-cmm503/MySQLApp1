@@ -11,8 +11,8 @@ $sql = "select * FROM 'marvelmovies' ";
 // execute the SQL query
 //$result = $db->query($sql);
 //$db="localdb";
-//$result=mysqli_query($link,$sql);
-$result=$link->query($sql);
+$result=mysqli_query($link,$sql);
+//$result=$link->query($sql);
 echo mysqli_num_rows($result)." ... ... ok ... ... ";
 while($row = $result->fetch_array())
 {
