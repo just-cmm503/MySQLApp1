@@ -11,11 +11,12 @@ $sql = "select * from marvelmovies";
 //$result=mysqli_query($link,$sql);
 $result=$link->query($sql);
 
-$hRow=$result->fetch_fields();
+
 print "<div class='cHr'>";
-foreach ($hRow as $colHead){
+for ($i=0; $i< mysqli_num_fields($result);$i++){
+    $hRow=mysqli_fetch_fields($result,$i);
     print "<div class='cH'>";
-    print "   $colHead  ";
+    print "   $hRow  ";
     print "</div>";
 }
 print "</div>";
