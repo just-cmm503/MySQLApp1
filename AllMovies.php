@@ -14,7 +14,7 @@ $result=$link->query($sql);
 
 print "<div class='cHr'>";
 for ($i=0; $i< mysqli_num_fields($result);$i++){
-    $hRow=mysqli_fetch_fields($result,$i);
+    $hRow=mysqli_fetch_field($result,$i);
     print "<div class='cH'>";
     print "   $hRow  ";
     print "</div>";
