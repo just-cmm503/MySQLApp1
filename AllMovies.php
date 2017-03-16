@@ -11,6 +11,16 @@ $sql = "select * from marvelmovies";
 //$result=mysqli_query($link,$sql);
 $result=$link->query($sql);
 
+$hRow=$result->fetch_assoc();
+print "<div class='cHr'>";
+foreach ($hRow as $colHead){
+    print "<div class='cH'>";
+    print "   $colHead  ";
+    print "</div>";
+}
+print "</div>";
+
+
 while($row = $result->fetch_array())
 {
     /* the code inside here is repeated for each item in the array
