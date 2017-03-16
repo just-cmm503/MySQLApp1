@@ -19,7 +19,7 @@ while($row = $result->fetch_array())
     //$movieTitle = $row['title'];
     //print "<p>" . $movieTitle . "</p>";
 
-    foreach ($row as $col){
+    foreach ($row as &$col){
         print " <div class='col'> \r\n";
         print "  $col  ";
         print " </div> \r\n";
