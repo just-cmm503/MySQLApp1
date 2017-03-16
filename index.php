@@ -9,5 +9,7 @@
 
 ?>
 
-<a href="AllMovies.php">Display all povies</a> <br>
-<a href="ms.php">Marvel Studio's Movies</a>
+<a href="AllMovies.php">Display all Movies</a> <br>
+<a href="ms.php">Marvel Studio's Movies</a><br>
+<a href="gt2010.php">Movies after 2010</a><br>
+<a href="xMen-m.php">X-Men Movies</a><br>
