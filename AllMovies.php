@@ -15,13 +15,18 @@ while($row = $result->fetch_array())
 {
     /* the code inside here is repeated for each item in the array
     You can do things like the following to print out each movie title */
-    print " \r\n";
-    $movieTitle = $row['title'];
-    echo "<p>" . $movieTitle . "</p>";
+    print " <div class='row'> \r\n";
+    //$movieTitle = $row['title'];
+    //print "<p>" . $movieTitle . "</p>";
+
+    foreach ($row as $col){
+        print "  $col  ";
+    }
+    print " </div> \r\n";
 }
 $result->close();
 $link->close();
 
 ?>
 
-<div class="row" 
+
