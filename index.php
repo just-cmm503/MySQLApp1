@@ -6,19 +6,8 @@
  * Time: 16:49
  */
 // create a SQL query as a string
-include "dbConnect.php";
-$sql = "select * from marvelmovies";
-// execute the SQL query
-//$result=mysqli_query($link,$sql);
-$result=$link->query($sql);
-//echo mysqli_num_rows($result)." rows returned from database ";
-while($row = $result->fetch_array())
-{
-    /* the code inside here is repeated for each item in the array
-    You can do things like the following to print out each movie title */
-    $movieTitle = $row['title'];
-    echo "<p>" . $movieTitle . "</p>";
-}
-$result->close();
-$link->close();
+
 ?>
+
+<a href="AllMovies.php">Display all povies</a> <br>
+<a href="ms.php">Marvel Studio's Movies</a>
