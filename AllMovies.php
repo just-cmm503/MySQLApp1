@@ -19,7 +19,7 @@ while($row = $result->fetch_array())
     $count1=0;
     foreach ($row as $col){
         $count1++;
-        if (mod($count1,2) ==0) {
+        if (($count1 % 2)==0) {
             print " <div class='col'> \r\n";
             print "  $col  ";
             print " </div> \r\n";
