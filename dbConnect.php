@@ -21,7 +21,7 @@
         $connectstr_dbusername = preg_replace("/^.*User Id=(.+?);.*$/", "\\1", $value);
         //echo $connectstr_dbusername." g3 <br> \r\n";;
         $connectstr_dbpassword = preg_replace("/^.*Password=(.+?)$/", "\\1", $value);
-        //echo $connectstr_dbpassword." g4 <br> \r\n";;
+        echo $connectstr_dbpassword." g4 <br> \r\n";;
     }
     $link = mysqli_connect($connectstr_dbhost, $connectstr_dbusername, $connectstr_dbpassword, $connectstr_dbname);
     if (!$link) {
